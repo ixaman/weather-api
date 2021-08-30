@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Weather API</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background: url(images/bg-image.jpg) no-repeat;
+        background-size: cover;
+        height: 100vh;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- search field -->
+    <div class="container">
+      <form class="col-md-6 m-auto py-5">
+        <div class="input-group mb-3">
+          <input
+            id="input-field"
+            type="text"
+            class="form-control"
+            placeholder="Enter a location for Weather ..."
+          />
+          <div class="input-group-append">
+            <button
+              onclick="displayInput()"
+              type="button"
+              class="btn btn-danger"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </form>
+      <!-- search field -->
+      <div class="weather-status text-white text-center">
+        <div id="icon-field"></div>
+        <h1 id="location-field"></h1>
+        <div id="temparature"></div>
+        <h1 id="weather-type" class="lead"></h1>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
